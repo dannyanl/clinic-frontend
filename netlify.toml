@@ -9,7 +9,7 @@
   status = 200
 
 [context.production.environment]
-  VITE_API_URL = "https://clinic-backend.onrender.com/api/v1"
+  VITE_API_URL = "https://clinix-team-backend.onrender.com/api/v1"
 
 [context.development.environment]
   VITE_API_URL = "http://localhost:8000/api/v1"
