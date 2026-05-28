@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  environment = { NODE_VERSION = "18.17.0" }
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production.environment]
+  VITE_API_URL = "https://clinic-backend.onrender.com/api/v1"
+
+[context.development.environment]
+  VITE_API_URL = "http://localhost:8000/api/v1"
